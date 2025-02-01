@@ -101,7 +101,7 @@ code {
     width: 100%;
     max-height: 320px;
     border: none;
-    z-index: 1;
+    z-index: 2.5;
     border-bottom: 2px solid;
   }
 
@@ -109,6 +109,7 @@ code {
     position: relative;
     margin-left: 0px;
     margin-top: 300px;
+    z-index: 2.5;
   }
   img {
     height:180px;
