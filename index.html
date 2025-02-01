@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>AI & Machine Learning fundamentals</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <nav id="navbar">
+        <header>AI & Machine Learning fundamentals</header>
+        <ul>
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#types_of_machine_learning">Types of Machine Learning</a></li>
+          <li><a class="nav-link" href="#key_ml_concepts">Key ML Concepts</a></li>
+          <li><a class="nav-link" href="#neural_network_basics">Neural Networks Basics</a></li>
+          <li><a class="nav-link" href="#ai_ethics_and_challenges">AI Ethics & Challenges</a></li>
+        </ul>
+
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="introduction">
+          <header>🔹Introduction</header>
+         <article>
+           <p>Artificial intelligence(AI) is the theory and development of computer system capable of performing tasks that historically required human intelligence, such as recognizing speech, making decisions, and identifying patterns. AI is an umbrella term that encompasses a wide variety of technologies, including machine learning, deep learning, and natural language processing(NPL).</p>
+           <p>Although the term is commonly used to describe a range of differnet technologies in use today, many disagree on whether these actually constitude artificial intelligence. Instead, somoe argue that much of the technology used in the real world toady actually constitues highly advance machine learning that is simply  a first step towards true artificial intelligence, or "general artificial intelligence"(GAI).</p>
+            <ul>
+                <li>
+                    <h4>Artificial Intelligence</h4>
+                    <p>AI, is the process of imparting data, information, and human intelligence to machines. The main goal of Artificial Intelligence is to develop self-reliant machines that can think and act like humans. These machines can mimic human behaviour and perform tasks by learning and problem-solving. Most of the AI systems simulate natural intelligence to solve complex problems.
+                    </p>
+                </li>
+                <li>
+                    <h4>Machine Learning</h4>
+                    <p>Machine learning is a discipline of computer science that uses computer algorithms and analytics to build predictive models that can solve business problems. As per McKinsey & Co., machine learning is based on algorithms that can learn from data without relying on rules-based programming.</p>
+                    <h5>Types of Machine Learning:-</h5>
+                    <ol>
+                        
+                        <li>Supervised Learning.</li>
+                        <li>Unsupervised Learning.</li>
+                        <li>Reinforcement Learning.</li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>Deep Learning</h4>
+                    <p>Deep learning is a subset of machine learning that deals with algorithms inspired by structure and function of the human brain. Deep learning algorithms can work with an enormous amount of both structure and unstructured data. Deep learning's core concepts lies in artificial neural networks, which enable machines to make decisions.</p>
+                </li>
+            </ul>
+           
+         </article>
+        </section>
+        <section class="main-section" id="types_of_machine_learning">
+          <header>📌Types of Machine Learning</header>
+          <article>
+            <p>Machine learning algorithms are classified into three main categories:</p>
+            <ol>
+                  <h3>
+                    <li>Supervised Learning</li>
+                  </h3>
+                  <p>In Supervised learning, the data is already labeled, which means you know the target variable. Using this method of learning, systems can predict future outcomes based on past data. It requires that at least an input and output variable be given to the model for it to be trained.</p>
+                  <p>Below is an example of a supervised learning method. The algorithm is trained using labeled data of dogs and cats. The trained model predicts whether the new image is that of a cat or a dog.</p>
+                  <img src="images/supervised learing.jpeg" alt="">
+                  <p>✅Example: Supervised learning include linear regression, logistic regression, support vector machines, Naive Bayes, and decision tree.</p>
+                  <p></p>
+                  
+                  <h3>
+                    <li>Unsupervised Learning</li>
+                  </h3>
+                  <p>Unsupervised learing algorithms employ unlabeled data to discover pattaerns from the data on their own. The systems are able to identify hidden features from the input data provided. Once the data is more readable, the patterns and similarities become more evident.</p>
+                  <p>Below is an example of an unsupervised learning method that trains a model using unlabeled data. In this case, the data consists of different vehicles. The purpose of the model is to classify each kind of vehicle.</p>
+                  <img src="images/unsupervised learning.jpeg" alt="">
+                  <p>✅Example: Unsupervised learning include k-means clustering, hierarchical clustering, and anomaly detection.</p>
+                  <p></p>
+
+                  <h3>
+                    <li>Reinforcement Learning</li>
+                  </h3>
+                  <p>The goal of reinforcement learning is to train an agent to complete a task within an uncertain environment. The agent receives observations and a reward from the environment and sends actions to the environment. The reward measures how successful action is with respect to completing the task goal.</p>
+                  <p>Below is an example that shows how a machine is trained to identify shapes.</p>
+                  <img src="images/reinforcement learning.jpeg" alt="">
+                  <p>✅Example: Q-learning and Deep Q-learning Neural Networks.</p>
+                  <p></p>
+            </ol>
+          </article>
+        </section>
+        <section class="main-section" id="key_ml_concepts">
+          <header>🔹Key ML Concepts</header>
+          <article>
+            <ol>
+              <h3>
+                <li>Training vs Testing Data</li>
+              </h3>
+              <p>In machine learning, data is typically divided into training and testing sets to ensure that the model learns effectively and generalizes well to new, unseen data.</p>
+              <h4>🎯Training Data</h4>
+              <ul>
+                <li>Training Data is used to teach(train) the machine learning model.</li>
+                <li>The model learns patterns and relationships from the training dataset.</li>
+                <li>It adjusts internal parameters (e.g., weights in neural networks) to minimize errors.</li>
+                <li>The model tries to make accurate predictions on this data.</li>
+              </ul>
+              <p>✅Examples: If you are training a model to recognize handwritten digits, the training dataset contains thousands of labeled images(e.g., "this is a 3,""this is a 7").</p>
+              <h4>🎯Testing Data</h4>
+              <ul>
+                <li>Testing Data is used to evaluate how well the trained model performs on unseen data.</li>
+                <li>The model makes predictions on the test dataset.</li>
+                <li>The results are compared against the actual labels to measure accuracy.</li>
+                <li>Helps check if the model is overfitting or underfitting.</li>
+              </ul>
+              <p>✅Example: After training a handwritten digit classifier, you test it on separate set of images that it has never seen before. If the accuracy is high, the model has learned well. </p>
+              
+              
+              <h3>
+                <li>Overfitting & Underfitting</li>
+              </h3>
+              <h4>🎯Overfitting in Machine Learning</h4>
+              <p>Overfitting happens when a model learns too much from the training data, including details that don't matter(like noise or outliers).</p>
+              <ul>
+                <li>For examples, imagine fitting a very complicated curve to a set of points. The curve will go through every point, but it won't represent the actual pattern.</li>
+                <li>As a result, the model works great on training data but fails when tested on new data</li>
+              </ul>
+              <p>Overfitting models are like students who memorize answers instead of understanding the topic. They do well in practice tests (training) but struggle in real exams(testing).</p>
+              <h5>📌Reasons for Overfitting:</h5>
+              <ol>
+                <li>High variance and low bias.</li>
+                <li>The model is too complex.</li>
+                <li>The size of the training data.</li>
+              </ol>
+              <h4>🎯Underfitting in Machine Learning</h4>
+              <p>Underfitting is the opposite of overfitting. It happens when a model is too simple to capture what's going on in the data.</p>
+              <ul>
+                <li>For example, imagine drawing a straight line to fit points that actually follow a curve. The line misses most of the pattern.</li>
+                <li>In this case, the model does't work on either the training or testing data.</li>
+              </ul>
+              <p>Underfitting models are like students who don't study enough. They don't do well in practice tests or real exams. Note: The underfitting model has High bias and low variance.</p>
+              <h5>📌Reasons for Underfitting</h5>
+              <ol>
+                <li>The model is too simple, So it may be not capable to represent the complexities in the data.</li>
+                <li>The input features which is used to train the model is not the adequate representations of underlying factors influencing the target variable.</li>
+                <li>The size of the training dataset used is not enough.</li>
+                <li>Excessive regularization are used to prevent the overfitting, which contraint the model to capture the data well.</li>
+                <li>Features are not scaled.</li>
+              </ol>
+              
+              
+              <h3>
+                <li>Bias-Variance Tradeoff</li>
+              </h3>
+              <p>The Bias-Variance Tradeoff is a fundamental concept in machine learning that deals with the balance between simplicity and complexity in a model. The goal is to find a sweet spot where the model generalizes well to new, unseen data.</p>
+              <h4>🎯What is Bias?</h4>
+              <p> 📌Bias refers to errors introduced by overly simplistic models that do not capture the underlying patterns in the data.</p>
+              <h5>✅High Bias (Underfitting)</h5>
+              <ul>
+                <li>The model is too simple and makes a lot of assumptions.</li>
+                <li>It fails to capture important patterns in the data.</li>
+                <li>Results in high training and high test error.</li>
+              </ul>
+              <p>Example:A linear regression model trying to fit a complex, nonlinear dataset.</p>
+              <h4>🎯What is Variance?</h4>
+              <p>📌Variance refers to errors introduced by overly complex models that learn noise along with the actual patterns.</p>
+              <h5>✅ High Variance (Overfitting)</h5>
+              <ul>
+                <li>The model is too complex and captures even random noise in the training data.</li>
+                <li>It performs well on training data but poorly on new test data.</li>
+                <li>Results in low training error but high test error.</li>
+              </ul>
+              <p>Example:A deep neural network with too many layers that memorizes training data but fails on new data.</p>
+              <h4>🎯The Tradeoff: Finding the Right Balance</h4>
+              <p>The challenge is to find the optimal model complexity:</p>
+              <ul>
+                <li>Too simple → High Bias (Underfitting)</li>
+                <li>Too complex → High Variance (Overfitting)</li>
+                <li>Just right → Low Bias & Low Variance (Good Generalization)</li>
+              </ul>
+              <p>This is called the Bias-Variance Tradeoff, where reducing one often increases the other.</p>
+              <h4>📊Visualization of Bias vs. Variance</h4>
+              <p>Imagine a dartboard analogy:</p>
+              <p>🎯High Bias → Darts are scattered far from the center (consistently wrong).</p>
+              <p>🎯High Variance → Darts are close together but far from the target (memorizing but not generalizing).</p>
+              <p>🎯Optimal Tradeoff → Darts are close to the center with minimal spread.</p>
+              <h4>📊Practical Example in Python</h4>
+              <p>Here's how bias and variance can be observed using a Polynomial Regression model:</p>
+              <pre><code>
+                from sklearn.preprocessing import PolynomialFeatures
+                from sklearn.linear_model import LinearRegression
+                from sklearn.pipeline import make_pipeline
+                import numpy as np
+                import matplotlib.pyplot as plt
+                
+                # Generate synthetic data
+                np.random.seed(42)
+                X = np.linspace(0, 10, 100).reshape(-1, 1)
+                y = np.sin(X).ravel() + np.random.normal(0, 0.2, X.shape[0])
+                
+                # Train models with different degrees
+                degrees = [1, 4, 15]  # Low (Underfitting), Balanced, High (Overfitting)
+                
+                plt.figure(figsize=(12, 4))
+                for i, d in enumerate(degrees):
+                    plt.subplot(1, 3, i + 1)
+                    model = make_pipeline(PolynomialFeatures(d), LinearRegression())
+                    model.fit(X, y)
+                    y_pred = model.predict(X)
+                    
+                    plt.scatter(X, y, color="blue", s=10, label="Data")
+                    plt.plot(X, y_pred, color="red", label=f"Degree {d}")
+                    plt.legend()
+                    plt.title(f"Polynomial Degree: {d}")
+                
+                plt.show()
+                </code></pre>
+                <h5>Interpretation:</h5>
+                <ul>
+                  <li>Degree 1 (Underfitting) → High Bias</li>
+                  <li>Degree 4 (Balanced) → Good Fit</li>
+                  <li>Degree 15 (Overfitting) → High Variance</li>
+                </ul>
+                <h5>🎯Key Takeaways</h5>
+                <ul>
+                  <li>Bias: Error from overly simplistic models → leads to underfitting.</li>
+                  <li>Variance: Error from overly complex models → leads to overfitting.</li>
+                  <li>Tradeoff: Find the right balance for best generalization.</li>
+                </ul>
+                <p></p>
+
+              <h3>
+                <li>Feature Engineering</li>
+              </h3>
+              <p>🎯Feature Engineering is the process of selecting, transforming, or creating new features (input variables) from raw data to improve the performance of a machine learning model. Good features = Better model accuracy!</p>
+              <h4> 📌Why is Feature Engineering Important?</h4>
+              <ul>
+                <li>A model is only as good as the features it learns from.</li>
+                <li>Poorly chosen features lead to low accuracy and poor generalization.</li>
+                <li>Well-engineered features reduce model complexity and improve performance.</li>
+              </ul>
+              <h4>🔹Steps in Feature Engineering</h4>
+              <ol>
+                <h5><li>Feature Selection (Choosing the Right Features)</li></h5>
+                <p>📌Goal: Identify the most relevant features and remove unnecessary ones.</p>
+                <p>✅Techniques:</p>
+                <ul>
+                  <li>Filter Methods (Correlation, Mutual Information)</li>
+                  <li>Wrapper Methods (Recursive Feature Elimination)</li>
+                  <li>Embedded Methods (LASSO, Decision Trees)</li>
+                </ul>
+                <p>Example:</p>
+                <p>If predicting house prices, removing "Owner's Name" (irrelevant) while keeping "Square Footage" (relevant).</p>
+
+
+                <h5><li>Feature Selection (Improving Features)</li></h5>
+                <p>📌Goal: Modify existing features to make them more useful.</p>
+                <p>✅Common Transformations</p>
+                <ul>
+                  <li>Normalization (Min-Max Scaling) → Rescales values to [0,1]</li>
+                  <li>Standardization (Z-score Scaling) → Centers around mean with unit variance</li>
+                  <li>Log Transform → Helps with skewed data</li>
+                  <li>Encoding Categorical Variables → One-hot encoding, Label encoding</li>
+                </ul>
+                <p>Example:</p>
+                <p>Converting "City Names" (New York, Tokyo) into numerical one-hot vectors.</p>
+
+                <h5><li>Feature Creation (Generating New Features)</li></h5>
+                <p>📌Goal: Create new features from existing ones to capture hidden patterns.</p>
+                <p>✅Techniques:</p>
+                <ul>
+                  <li>Polynomial Features → Creating X<sup>2</sup>, X <sup>3</sup> for non-linearity</li>
+                  <li>Date-Time Features → Extracting "Day of the Week" from timestamps</li>
+                  <li>Domain-Specific Features → Creating BMI from height & weight</li>
+                </ul>
+                <p>Example:</p>
+                <p>From "Date of Purchase," extract features like "Day of the Week" or "Is Weekend?"</p>
+                
+                
+                <h5><li>Handling Missing Data</li></h5>
+                <p>📌Goal: Fill missing values instead of dropping rows.</p>
+                <p>✅Techniques:</p>
+                <ul>
+                  <li>Mean/Median Imputation → Replace missing values with average</li>
+                  <li>Forward/Backward Fill → Use neighboring values</li>
+                  <li>Predictive Imputation → Use ML models to guess missing values</li>
+                </ul>
+                <p>Example:</p>
+                <p>Replacing missing "Age" values with the median age of the dataset.</p>
+
+                <h5><li>Feature Encoding (Dealing with Categorical Data)</li> </h5>
+                <p>📌Goal: Convert text-based categories into numerical values for ML models.</p>
+                <p>✅Methods:</p>
+                <ul>
+                  <li>One-Hot Encoding (For unordered categories: Male, Female → [1,0] or [0,1])</li>
+                  <li>Label Encoding (For ordered categories: Low=0, Medium=1, High=2)</li>
+                </ul>
+                <h4>📊Example in Python</h4>
+                <pre><code>
+                  import pandas as pd
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+
+# Sample Data
+data = {'Age': [25, 30, 35, None],  # Missing value
+        'Salary': [50000, 60000, 75000, 80000],
+        'City': ['New York', 'Paris', 'Tokyo', 'Paris']}
+
+df = pd.DataFrame(data)
+
+# Handling Missing Data (Fill Age with Median)
+df['Age'].fillna(df['Age'].median(), inplace=True)
+
+# Feature Scaling (Standardization)
+scaler = StandardScaler()
+df['Salary'] = scaler.fit_transform(df[['Salary']])
+
+# Encoding Categorical Data (One-Hot Encoding)
+encoder = OneHotEncoder(sparse=False)
+encoded_cities = encoder.fit_transform(df[['City']])
+df = df.drop('City', axis=1)
+df = pd.concat([df, pd.DataFrame(encoded_cities, columns=encoder.get_feature_names_out())], axis=1)
+
+print(df)
+
+                </code></pre>
+                <p>✅What's Happening?</p>
+                <ul>
+                  <li>Filling missing Age with median.</li>
+                  <li>Scaling Salary to have mean 0 and variance 1.</li>
+                  <li>Converting City into one-hot encoded numerical values.</li>
+                  
+                </ul>
+                <h5> 🎯Key Takeaways</h5>
+                <ul>
+                  <li>Feature Engineering = Improving Input Data for better ML performance.</li>
+                  <li>Feature Selection removes irrelevant data.</li>
+                  <li>Feature Transformation scales or encodes data.</li>
+                  <li>Feature Creation adds new insights.</li>
+                  <li>Better features = Higher model accuracy!</li>
+                </ul>
+              </ol>
+              
+
+            </ol>
+
+          </article>
+        </section>
+        <section class="main-section" id="neural_network_basics">
+          <header>
+            🤖Neural Networks Basics</header>
+          <article>
+            <p>🎯Neural Networks are the backbone of Deep Learning and are designed to mimic the way the human brain processes information. They consist of layers of interconnected nodes (neurons) that process and transform input data to learn patterns.</p>
+            <ol>
+              <h3><li>How Neural Networks work</li></h3>
+              <p>🧠A neural network consists of:</p>
+                <ul>
+                  <li>Input Layer → Takes raw data as input (e.g., images, text, numbers).</li>
+                  <li>Hidden Layers → Processes data through neurons using weights & biases.</li>
+                  <li>Output Layer → Produces the final prediction.</li>
+                </ul>
+                <p>Each connection between neurons has a weight, and each neuron has a bias. These are adjusted through training to make the model more accurate.</p>
+                <p>✅Example:</p>
+                <ul>
+                  <li>A neural network for digit recognition takes an image of a number (e.g., "7") as input.</li>
+                  <li>The hidden layers process the pixel values.</li>
+                  <li>The output layer predicts a number between 0-9.</li>
+                </ul>
+  
+              <h3><li>Activation Function (ReLU, Sigmoid, Softmax,etc.)</li></h3>
+                  <p>🔄Activation functions decide whether a neuron should be activated (pass information forward) or not.</p>
+                    <h4>1️⃣Sigmoid Function (📈 S-shaped curve)</h4>
+                    <ul>
+                      <li>Output: Range (0,1) → Good for probabilities.</li>
+                      <li>Used in binary classification (e.g., spam vs. not spam).</li>
+                      <li>Issue: Causes vanishing gradients, slowing down learning in deep networks.</li>
+                    </ul>
+                    <p>✅ Use Case: Last layer in binary classification.</p>
+                    <h4>2️⃣ ReLU (Rectified Linear Unit) (🚀 Most Used!)</h4>
+                    <ul>
+                      <li>Output: 0 if x < 0, x if x ≥ 0.</li>
+                      <li>Faster computation & avoids vanishing gradient problem.</li>
+                      <li>Formula: f(x)=max(0,x)</li>
+                    </ul>
+                    <p>✅ Use Case: Hidden layers in deep learning models.</p>
+                    <h4>3️⃣ Softmax (🔥 Used in Multi-Class Classification)</h4>
+                    <ul>
+                      <li>Converts raw scores into probabilities that sum to 1.</li>
+                      <li>Used in the output layer for multi-class classification.</li>
+                    </ul>
+                    <p>✅ Use Case: Classifying an image as "Dog", "Cat", or "Bird".</p>
+              <h3><li>Backpropagation & Gradient Descent (Training a Neural Network)</li></h3>
+                    <h4>1️⃣ Forward Propagation</h4>
+                    <ul>
+                      <li>Input passes through the network layer by layer.</li>
+                      <li>Output is compared to the actual label using a loss function (e.g., Mean Squared Error).</li>
+                    </ul>
+                    <h4>2️⃣ Backpropagation (Updating Weights & Biases)</h4>
+                    <ul>
+                      <li>Calculates the error gradient of the loss function w.r.t each weight using the chain rule of calculus.</li>
+                      <li>Adjusts weights to minimize the error.</li>
+                    </ul>
+                    <h4>3️⃣ Gradient Descent (Optimization Algorithm)</h4>
+                    <ul>
+                      <li>Moves weights in the direction of minimum loss.</li>
+                    </ul>
+                    <h5>✅ Types of Gradient Descent:</h5>
+                    <ul>
+                      <li>Batch Gradient Descent → Uses the entire dataset.</li>
+                      <li>Stochastic Gradient Descent (SGD) → Updates after each data point (faster, but noisy).</li>
+                      <li>Mini-Batch Gradient Descent → Uses small batches of data (best trade-off).</li>
+                    </ul>
+                    <h4>📌 Install Dependencies (if not installed)</h4>
+                    <pre><code>pip install tensorflow numpy matplotlib
+                    </code></pre>
+                    <h4>🚀 Python Code for a Simple Neural Network</h4>
+                    <pre><code>
+                      import tensorflow as tf
+from tensorflow import keras
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 1️⃣ Load the MNIST Dataset (Handwritten Digits)
+mnist = keras.datasets.mnist
+(X_train, y_train), (X_test, y_test) = mnist.load_data()
+
+# 2️⃣ Normalize the Data (Scale pixel values to [0,1])
+X_train, X_test = X_train / 255.0, X_test / 255.0
+
+# 3️⃣ Build the Neural Network Model
+model = keras.Sequential([
+    keras.layers.Flatten(input_shape=(28, 28)),  # Input Layer (28x28 pixels → 1D)
+    keras.layers.Dense(128, activation='relu'),  # Hidden Layer (128 neurons, ReLU)
+    keras.layers.Dense(10, activation='softmax') # Output Layer (10 classes, Softmax)
+])
+
+# 4️⃣ Compile the Model (Using Gradient Descent Optimizer)
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+# 5️⃣ Train the Model (Backpropagation & Gradient Descent)
+model.fit(X_train, y_train, epochs=5)
+
+# 6️⃣ Evaluate Model Performance
+test_loss, test_acc = model.evaluate(X_test, y_test)
+print(f"Test Accuracy: {test_acc:.4f}")
+
+# 7️⃣ Predict on Test Data (Optional: Display Example Predictions)
+predictions = model.predict(X_test)
+
+# Show a sample prediction
+plt.imshow(X_test[0], cmap=plt.cm.binary)
+plt.title(f"Predicted: {np.argmax(predictions[0])}, Actual: {y_test[0]}")
+plt.show()
+
+                    </code></pre>
+                    <h4>📝 Steps in the Code:</h4>
+                    <ol>
+                      <li>Load the MNIST dataset (handwritten digits).</li>
+                      <li>Normalize the pixel values.</li>
+                      <li>Create a simple Feedforward Neural Network.</li>
+                      <li>Train the model using Backpropagation & Gradient Descent.
+                      </li>
+                      <li>Evaluate accuracy.</li>
+                    </ol>
+                    <H4>📊 Explanation of the Code</H4>
+                    <ul>
+                      <li>Flatten Layer: Converts 28x28 images into a 1D array (28×28 = 784 pixels).</li>
+                      <li>Hidden Layer (128 neurons, ReLU): Learns patterns from the input data.</li>
+                      <li>Output Layer (10 neurons, Softmax): Outputs probabilities for digits (0-9).</li>
+                      <li>Loss Function: sparse_categorical_crossentropy (for multi-class classification).</li>
+                      <li>Optimizer: adam (Adaptive Gradient Descent).</li>
+                      <li>Epochs = 5: The model is trained for 5 iterations over the dataset.</li>
+                    </ul>
+                    <h4>🔥 What Happens During Training?</h4>
+                    <ul>
+                      <li>Forward Propagation: Data flows through the layers.</li>
+                      <li>Loss Computation: Model checks how far predictions are from actual labels.</li>
+                      <li>Backpropagation: Adjusts weights using Gradient Descent to minimize error.</li>
+                      <li>Repeat for Each Epoch! 🚀</li>
+                    </ul>
+                    <h4>🎯 Expected Output</h4>
+                    <p>After training, the model should achieve ~98% accuracy on the training set and ~97% accuracy on the test set. The final output will show a predicted vs. actual digit with a visualization.
+
+                    </p>
+            </ol>
+          </article>
+          
+        </section>
+        <section class="main-section" id="ai_ethics_and_challenges">
+          <header>🔹AI Ethics and Challenges</header>
+          <p>🎯AI is transforming industries, but it also raises ethical concerns. Issues like bias, fairness, privacy, and future risks must be addressed to ensure AI benefits everyone.</p>
+          <ol>
+            <h3><li>AI Bias & Fairness</li></h3>
+            <h4>📌 What is AI Bias?</h4>
+            <p>AI bias occurs when models make unfair or discriminatory decisions due to biased training data or flawed algorithms.</p>
+            <p>✅ Examples of AI Bias:</p>
+            <ul>
+              <li>Hiring Bias → AI-powered hiring tools rejecting candidates based on gender/race.</li>
+              <li>Facial Recognition Issues → Struggles with darker skin tones due to biased datasets.</li>
+              <li>Loan Approval Discrimination → AI favoring certain demographics in financial decisions.</li>
+            </ul>
+            <h4>🔹 How to Reduce AI Bias?</h4>
+            <p>✅ Diverse & Representative Training Data</p>
+            <p>✅ Bias Detection & Auditing</p>
+            <p>✅ Fairness-Aware Algorithms (e.g., IBM's AI Fairness 360)
+
+            </p>
+            <h3><li>Privacy Cocerns in AI</li></h3>
+            <h4>📌 How AI Affects Privacy?</h4>
+            <p>AI relies on massive datasets, often collecting and analyzing personal data. This raises concerns about data misuse, surveillance, and consent.</p>
+            <p>✅ Examples of AI & Privacy Risks:</p>
+            <ul>
+              <li>Social Media Monitoring → AI tracking user behavior for targeted ads.</li>
+              <li>Facial Recognition in Public Spaces → Potential for mass surveillance.</li>
+              <li>Personal Assistants (Alexa, Siri, etc.) → Risk of eavesdropping and data leaks.</li>
+            </ul>
+            <h4>🔹 Solutions for AI Privacy Risks</h4>
+            <p>✅ Data Encryption & Anonymization</p>
+            <p>✅ Stricter AI Regulations (GDPR, CCPA)</p>
+            <p>✅ User Control Over Data Collection</p>
+            <h3><li>The Future of AI</li></h3>
+            <h4>📌 Key AI Trends & Challenges</h4>
+            <p>🚀 AGI (Artificial General Intelligence) → AI as smart as humans?</p>
+            <p>⚠️ Job Displacement → Will AI replace human workers?</p>
+            <p>🛠️ Explainable AI (XAI) → Making AI decisions transparent.</p>
+            <p>🤖 AI in Healthcare → AI diagnosing diseases, but ethical risks exist.</p>
+          </ol>
+          <h4>🔹 How to Ensure AI Benefits Humanity?</h4>
+          <p>✅ Ethical AI Development & Policies</p>
+          <p>✅ Human-AI Collaboration Instead of Replacement</p>
+          <p>✅ Stronger AI Governance & Global AI Ethics Frameworks</p>
+          <code></code>
+        </section>
+      </main>
+    </body>
+    </html>
